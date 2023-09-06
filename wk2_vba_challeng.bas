@@ -9,7 +9,7 @@ Sub CalculateSummaryData()
 
   ' Calculate for every worksheet
   For Each ws In ThisWorkbook.Sheets
-  
+   ' Check that the worksheet contains stock data, otherwise do nothing.
    If ws.Cells(1, 1) = "<ticker>" Then
     Dim LastRow As Long
     Dim Ticker As String
